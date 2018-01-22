@@ -17,7 +17,7 @@ namespace ZirconTechFaceIT.Views
         private const string Url = "https://jsonplaceholder.typicode.com/posts";
         private HttpClient _client = new HttpClient();
 
-        UserLogin user = new UserLogin();
+      //  UserLogin user = new UserLogin();
 
         public SignInPage()
         {
@@ -28,7 +28,7 @@ namespace ZirconTechFaceIT.Views
         {
             var email = EmailEntry.Text;
             var password = PasswordEntry.Text;
-
+/*
             if (email.Contains("@") & email.Contains(".com"))
             {
                 email = user.Email;
@@ -42,7 +42,8 @@ namespace ZirconTechFaceIT.Views
             else
             {
                 ErrorLabel.Text = "Email is not valid";
-            }
+            }*/
+               await Navigation.PushAsync(new TabPage());
         }
 
 

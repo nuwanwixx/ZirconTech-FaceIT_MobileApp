@@ -25,19 +25,15 @@ namespace ZirconTechFaceIT.Views
 
             if (EmailEntry.Text != null)
             {
-
                 if (email.Contains("@") & email.Contains(".com"))
                 {
                     apiCall(1);
                     await Navigation.PushAsync(new TabPage());
                 }
-
-
                 else
                 {
                     ErrorLabel.Text = "Email is not valid";
                     return;
-
                 }
             }
             else
@@ -45,13 +41,14 @@ namespace ZirconTechFaceIT.Views
                 ErrorLabel.Text = "Please Enter Email";
             }
 
+        }
             private void apiCall(int v)
-        {
+            {
             //set HttpPost method to send Register data to the DB
             HttpClient _cleint = new HttpClient();
 
             throw new NotImplementedException();
-        }
+            }
     }
 }
 

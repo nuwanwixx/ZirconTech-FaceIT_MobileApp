@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using ZirconTechFaceIT.Views;
 using Xamarin.Forms;
 
 namespace ZirconTechFaceIT
@@ -14,6 +14,8 @@ namespace ZirconTechFaceIT
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+           
+
         }
 
         protected override void OnStart()

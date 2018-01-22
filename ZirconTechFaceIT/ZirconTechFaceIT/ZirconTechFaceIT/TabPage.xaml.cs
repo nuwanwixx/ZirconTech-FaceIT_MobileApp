@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ZirconTechFaceIT.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ZirconTechFaceIT.Views
+namespace ZirconTechFaceIT
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabPage : TabbedPage
@@ -23,4 +23,3 @@ namespace ZirconTechFaceIT.Views
         }
     }
 }
-
