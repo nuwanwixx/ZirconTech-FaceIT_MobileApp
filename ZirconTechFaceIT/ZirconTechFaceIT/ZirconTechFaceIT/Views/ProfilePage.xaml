@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZirconTechFaceIT.Views.ProfilePage"
+              x:Name="Profile">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Report User" Activated="ToolBar_Btn1" Order="Secondary"/>
+        <ToolbarItem Text="Suggestion" Activated="ToolBar_Btn2" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout>
+            <Image x:Name="profile" WidthRequest="360"
+                 HeightRequest="220"  />
+            <StackLayout>
+                <Label Text="John Snow" FontSize="25" HorizontalOptions="CenterAndExpand" />
+                <StackLayout Padding="5,0,5,0">
+                    <StackLayout>
+
+                        <Label />
+                        
+                        
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

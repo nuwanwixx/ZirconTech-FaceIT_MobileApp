@@ -13,12 +13,21 @@ namespace ZirconTechFaceIT
         public MainPage()
         {
             InitializeComponent();
+            image1.Source = ImageSource.FromResource("ZirconTechFaceIT.Images.background.jpg");
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new NextPage());
+        
 
+        async void Button_SignUp(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignUpPage());
+        }
+
+        async void Button_SignIn(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignInPage());
         }
     }
 }
+
+

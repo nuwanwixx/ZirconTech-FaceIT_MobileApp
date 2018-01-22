@@ -2,13 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ZirconTechFaceIT"
-             x:Class="ZirconTechFaceIT.MainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Next" Clicked="Button_Clicked"/>
+             x:Class="ZirconTechFaceIT.MainPage"
+             Title="Welcome">
+    <StackLayout>
+        <Image x:Name="image1" Aspect="AspectFill" />
+
+        <StackLayout  Padding="5,10,5,5" >
+
+            <Label Text="Face IT"
+               FontSize="30" 
+               TextColor="Navy" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Developed by ZirconTech" 
+               FontSize="15" TextColor="Gray" 
+               VerticalOptions="CenterAndExpand"  
+               HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout VerticalOptions="FillAndExpand" >
+                <Button Text="Sign IN" Clicked="Button_SignIn" />
+
+                <Button Text="Sign UP" Clicked="Button_SignUp" />
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>

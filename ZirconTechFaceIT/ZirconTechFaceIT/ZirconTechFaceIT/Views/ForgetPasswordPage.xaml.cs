@@ -10,11 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace ZirconTechFaceIT.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NextPage : ContentPage
+    public partial class ForgetPasswordPage : ContentPage
     {
-        public NextPage()
+        public ForgetPasswordPage()
         {
             InitializeComponent();
+        }
+
+        private async void Btn_Submit(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RenewPasswordPage());
+
         }
     }
 }
